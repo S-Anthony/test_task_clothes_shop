@@ -1,0 +1,19 @@
+.title {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #0F1A34;
+	&_ad {
+		margin-left: 0.75rem;
+	}
+	&_main {
+		color: #2D3132;
+		font-size: 1.75rem;
+	}
+	&_filters {
+		display: block;
+		height: 2.125rem;
+		font-weight: 300;
+		font-size: 1.375rem;
+		color: #5C5F60;
+	}
+}

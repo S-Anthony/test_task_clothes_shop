@@ -1,0 +1,26 @@
+@import './main/fonts.scss';
+@import './libs/bootstrap-grid.min.scss';
+* {
+	font-family: Stolzl;
+	font-weight: 400;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+@import './blocks/header.scss';
+@import './blocks/button.scss';
+@import './blocks/title.scss';
+@import './blocks/breadcrumbs.scss';
+@import './blocks/dropdown.scss';
+@import './blocks/accordion.scss';
+@import './blocks/filters.scss';
+@import './blocks/main.scss';
+@import './blocks/range.scss';
+@import './blocks/checklist.scss';
+@import './blocks/card.scss';
+@import './blocks/footer.scss';

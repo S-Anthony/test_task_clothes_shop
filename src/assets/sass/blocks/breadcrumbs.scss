@@ -1,0 +1,40 @@
+.breadcrumbs {
+	margin-top: 2.125rem;
+	ul {
+		display: flex;
+		li {
+			list-style-type: none;
+			font-size: 0.75rem;
+			margin-left: 0.75rem;
+			margin-right: 0.4rem;
+			color: #2D3132;
+			cursor: pointer;
+			&::before {
+				content: '/';
+				color: inherit;
+				font-weight: inherit;
+				font-size: 0.6rem;
+				position: relative;
+				left: -0.6rem;
+			}
+			&:first-child {
+				margin-left: 0;
+				&::before {
+					display: none;
+				}
+			}
+			a {
+				cursor: inherit;
+				text-decoration: none;
+				color: inherit;
+			}
+			&:last-child {
+				color: #747778;
+				cursor: context-menu;
+				a {
+					font-weight: 300;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.checklist {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 1rem;
+		font-size: 0.875rem;
+		&:first-child {
+			margin-top: 0.3rem;
+		}
+		&-label {
+			font-weight: 300;
+			display: flex;
+			align-items: center;
+			user-select: none;
+			cursor: pointer;
+			word-break: break-all;
+			&::before{
+				content: '';
+				display: inline-block;
+				width: 0.8rem;
+				height: 0.8rem;
+				flex-shrink: 0;
+				flex-grow: 0;
+				border: 0.125rem solid #C4C7C7;
+				border-radius: 0.25em;
+				margin-right: 1.1rem;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 50% 50%;
+			}
+		}
+		&-amount {
+			color: #747778;
+			font-weight: 300;
+		}
+	}
+	input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		&:checked+label::before {
+			border-color: #2D3132;
+			background-image: url("../img/checked_icon.svg");
+			background-size: 140%;
+		}
+	}
+}

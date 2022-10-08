@@ -1,0 +1,61 @@
+.button {
+	height: 91%;
+	background: #2D3132;
+	border-radius: 0.25rem;
+	color: #fff;
+	font-size: 0.75rem;
+	line-height: 100%;
+	padding: 0.7rem 1.1rem;
+	cursor: pointer;
+	transition: .1s all;
+	border: 0.0625rem solid transparent;
+	&_svg {
+		background: none;
+		border: 0.0625rem solid transparent;
+		width: 2.75rem;
+		height: 2.75rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		position: relative;
+		svg {
+			width: 45%;
+		}
+	}
+	&__alert {
+		position: absolute;
+		top: 10%;
+		right: 10%;
+		border: 0.15rem solid #fff;
+		height: 1.025rem;
+		width: 1.025rem;
+		color: #2D3132;
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		background: #EFF1F1;
+		border-radius: 100%;
+		font-size: 0.625rem;
+	}
+	&_message {
+		.button {
+			&__alert {
+				color: #fff;
+				background: #FF5449;
+			}
+		}
+	}
+	&_liked {
+		margin-left: 1.6rem;
+	}
+}
+@media (hover) , (min-width:0\0) , (min--moz-device-pixel-ratio:0){
+	.button {
+		&:hover {
+			background: #fff;
+			color: #2D3132;
+			border: 0.0625rem solid #2D3132;
+		}
+	}
+}
